@@ -19,9 +19,11 @@
 /* general */
 body {
   color: var(--text-brown);
+  background: var(--primary-color);
 }
 section {
-  background: var(--second-bg);
+  /* background: var(--second-bg); */
+  background: #fff;
 }
 h2 {
   font-size: 50px;
@@ -39,24 +41,85 @@ img {
   width: 100%;
   object-fit: cover;
 }
+textarea {
+  max-height: 500px;
+}
+
+.main-btn {
+  display: inline-block;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  padding: 10px 27px;
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--text-gray);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.main-btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-white);
+}
+/* navbar */
+header .navbar {
+  background: #efc384 !important;
+}
+.navbar-brand img {
+  height: 70px !important;
+  width: 120px !important;
+}
+header .nav-item .nav-link {
+  position: relative;
+  /* font-size: 16px; */
+  font-weight: 500;
+  /* display: inline-block; */
+}
+header .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+header .nav-item .nav-link .active::after,
+header .nav-item .nav-link:hover::after {
+  width: 100%;
+}
 /* banner section */
-#banner {
-  background: url(images/background.jpg);
+#banner img {
+  /* background: url(images/banner.jpeg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 70vh;
+  background-size: auto; */
+  height: 70vh !important;
+  object-fit: cover;
 }
 /* origin */
-.origin-text {
-  background: var(--primary-color);
+#origin {
+  background: var(--primary-color) !important;
+}
+#origin img {
+  height: 450px !important;
+  border-radius: 10px;
+}
+/* missions */
+#missions .row {
+  background: var(--second-bg) !important;
+  color: var(--text-white);
 }
 /* founder */
 #testimonials {
   margin: 100px 0;
 }
 .testimonials {
-  border-left: 4px solid #fff;
+  border-left: 4px solid var(--primary-color);
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -70,4 +133,7 @@ img {
   display: inline-block;
   font-size: 12px;
 }
-/* partners */
+/* teams */
+#team {
+  background: var(--second-bg) !important;
+}

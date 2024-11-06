@@ -9,10 +9,11 @@ window.onscroll = function () {
 };
 
 // Nav hide
-let navbar = document.querySelectorAll(".nav-link");
-let navCollapse = document.querySelectorAll(".navbar-collapse.collapse");
-navBar.forEach(function (a) {
+const navbar = document.querySelectorAll(".nav-link");
+var navCollapse = document.querySelectorAll(".navbar-collapse.collapse");
+navbar.forEach(function (a) {
   a.addEventListener("click", function () {
-    navCollapse.classList.remove("show");
+    console.log("hello");
+    navCollapse[0].classList.remove("show");
   });
 });

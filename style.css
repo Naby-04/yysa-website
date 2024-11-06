@@ -40,8 +40,12 @@ img {
   width: 100%;
   object-fit: cover;
 }
+.origin-img {
+  object-fit: contain;
+  /* height: 100%; */
+}
 textarea {
-  max-height: 500px;
+  max-height: 500px !important;
 }
 
 .main-btn {
@@ -182,4 +186,13 @@ footer i {
   border-radius: 50%;
   background: var(--first-bg);
   color: var(--text-brown);
+}
+@media screen and (max-width: 638px) {
+  h2 {
+    font-size: 32px;
+  }
+  .subtitles,
+  li {
+    font-size: 12px;
+  }
 }

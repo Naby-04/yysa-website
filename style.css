@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat" sans-serif;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 /* root */
 :root {
@@ -19,7 +19,7 @@
 /* general */
 body {
   color: var(--text-brown);
-  background: var(--primary-color);
+  background: var(--primary-color) !important;
 }
 section {
   /* background: var(--second-bg); */
@@ -52,7 +52,7 @@ textarea {
   padding: 10px 27px;
   background-color: transparent;
   border: 2px solid var(--secondary-color);
-  color: var(--text-gray);
+  color: var(--text-white);
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
@@ -60,9 +60,9 @@ textarea {
   text-decoration: none;
 }
 .main-btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--first-bg);
   border-color: var(--primary-color);
-  color: var(--text-white);
+  color: var(--text-brown);
 }
 /* navbar */
 header .navbar {
@@ -93,6 +93,9 @@ header .nav-item .nav-link:hover::after {
   width: 100%;
 }
 /* banner section */
+#banner {
+  background: var(--second-bg);
+}
 #banner img {
   /* background: url(images/banner.jpeg);
   background-repeat: no-repeat;
@@ -102,8 +105,12 @@ header .nav-item .nav-link:hover::after {
   object-fit: cover;
 }
 /* origin */
-#origin {
+#origin,
+form {
   background: var(--primary-color) !important;
+}
+.form-img img {
+  height: 450px !important;
 }
 #origin img {
   height: 450px !important;

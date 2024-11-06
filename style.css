@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat" sans-serif;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* root */
 :root {
-  --primary-color: #a15412;
+  --primary-color: #734d12;
   --secondary-color: #eb8d4c;
   /* background */
   --first-bg: #fff;

@@ -37,7 +37,6 @@ h2 {
   /* color: var(--text-white); */
 }
 img {
-  height: 270px !important;
   width: 100%;
   object-fit: cover;
 }
@@ -66,11 +65,15 @@ textarea {
 }
 /* navbar */
 header .navbar {
-  background: #efc384 !important;
+  background: #fff !important;
 }
 .navbar-brand img {
   height: 70px !important;
   width: 120px !important;
+}
+.header-scrolled {
+  border-bottom: 1px solid;
+  box-shadow: 5px 5px 5px;
 }
 header .nav-item .nav-link {
   position: relative;
@@ -94,7 +97,7 @@ header .nav-item .nav-link:hover::after {
 }
 /* banner section */
 #banner {
-  background: var(--second-bg);
+  background: var(--primary-color);
 }
 #banner img {
   /* background: url(images/banner.jpeg);
@@ -143,4 +146,40 @@ form {
 /* teams */
 #team {
   background: var(--second-bg) !important;
+}
+
+/* footer */
+footer img {
+  height: 30px !important;
+  width: 30px !important;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.description {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-white);
+}
+.yysa {
+  font-size: 20px;
+  font-weight: 500;
+}
+h6 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+footer a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--text-white);
+  text-decoration: underline;
+}
+footer i {
+  /* border: 1px solid red; */
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--first-bg);
+  color: var(--text-brown);
 }

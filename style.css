@@ -4,7 +4,7 @@
   font-family: "Montserrat" sans-serif;
   /* border: 1px solid red; */
 }
-/* root */
+/*---------------------------- root ----------------------------*/
 :root {
   --primary-color: #734d12;
   --secondary-color: #eb8d4c;
@@ -16,13 +16,12 @@
   --text-white: #fff;
   --text-semi-white: #dfdfdf;
 }
-/* general */
+/*---------------------------- general ----------------------------*/
 body {
   color: var(--text-brown);
   background: var(--primary-color) !important;
 }
 section {
-  /* background: var(--second-bg); */
   background: #fff;
 }
 h2 {
@@ -30,19 +29,17 @@ h2 {
   width: fit-content;
   margin: 0 auto;
   font-weight: 700;
-  /* border-bottom: 5px solid var(--secondary-color); */
 }
 .subtitles {
   font-size: 23px;
-  /* color: var(--text-white); */
 }
-img {
+#team img,
+#contacts img {
   width: 100%;
   object-fit: cover;
 }
 .origin-img {
   object-fit: contain;
-  /* height: 100%; */
 }
 textarea {
   max-height: 500px !important;
@@ -67,13 +64,13 @@ textarea {
   border-color: var(--primary-color);
   color: var(--text-brown);
 }
-/* navbar */
+/*---------------------------- navbar ----------------------------*/
 header .navbar {
   background: #fff !important;
 }
 .navbar-brand img {
-  height: 70px !important;
-  width: 120px !important;
+  height: 80px !important;
+  width: 110px !important;
 }
 .header-scrolled {
   border-bottom: 1px solid;
@@ -81,9 +78,9 @@ header .navbar {
 }
 header .nav-item .nav-link {
   position: relative;
-  /* font-size: 16px; */
+  font-size: 16px;
   font-weight: 500;
-  /* display: inline-block; */
+  color: var(--text-brown);
 }
 header .nav-item .nav-link::after {
   position: absolute;
@@ -95,23 +92,22 @@ header .nav-item .nav-link::after {
   transition: 0.3s;
   bottom: 0;
 }
+.active {
+  color: var(--text-brown) !important;
+}
 header .nav-item .nav-link .active::after,
 header .nav-item .nav-link:hover::after {
   width: 100%;
 }
-/* banner section */
+/*--------------------------- banner section ---------------------------*/
 #banner {
   background: var(--primary-color);
 }
 #banner img {
-  /* background: url(images/banner.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto; */
-  height: 70vh !important;
+  height: 80vh !important;
   object-fit: cover;
 }
-/* origin */
+/*------------------------------- origin -------------------------------*/
 #origin,
 form {
   background: var(--primary-color) !important;
@@ -123,15 +119,12 @@ form {
   height: 450px !important;
   border-radius: 10px;
 }
-/* missions */
+/*----------------------------- missions -----------------------------*/
 #missions .row {
   background: var(--second-bg) !important;
   color: var(--text-white);
 }
-/* founder */
-#testimonials {
-  margin: 100px 0;
-}
+/*------------------------------ founder ------------------------------*/
 .testimonials {
   border-left: 4px solid var(--primary-color);
   margin-top: 50px;
@@ -147,12 +140,24 @@ form {
   display: inline-block;
   font-size: 12px;
 }
-/* teams */
+/*------------------------------- teams -------------------------------*/
 #team {
   background: var(--second-bg) !important;
 }
-
-/* footer */
+/*---------------------------- departements ----------------------------*/
+#departments .card {
+  min-height: 300px;
+  background-color: var(--first-bg);
+  cursor: pointer;
+  transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+#departments .card:hover {
+  box-shadow: 0px 2px 7px 0 var(--primary-color) !important;
+  transform: translateY(-2px);
+  background: var(--primary-color);
+  color: var(--text-white);
+}
+/*---------------------------- footer ----------------------------*/
 footer img {
   height: 30px !important;
   width: 30px !important;
@@ -181,7 +186,6 @@ footer a:hover {
   text-decoration: underline;
 }
 footer i {
-  /* border: 1px solid red; */
   padding: 5px;
   border-radius: 50%;
   background: var(--first-bg);
